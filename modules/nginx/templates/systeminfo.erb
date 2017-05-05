@@ -1,0 +1,13 @@
+<html>
+	<ul>
+		<li> 
+			<% scope["nginx::systeminfo::systeminfodata"].each do |info| -%>
+			<%= info["description"] %>:  <%= info["metric"]  %>
+		      <% end -%>	
+
+
+
+		</li> 
+
+	</ul>
+</html>
